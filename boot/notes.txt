@@ -1,0 +1,17 @@
+navbar 
+buttons 
+class -> container, container-fluid
+spacing
+margin
+padding
+carousel (moving slides for images)
+cards
+images
+table
+(class -> float-right float-left)
+form
+(class -> fixed-bottom)
+Jumbotron
+button
+grid option
+modal

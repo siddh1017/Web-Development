@@ -1,0 +1,102 @@
+<!DOCTYPE html>  <!--documnet type html-->
+<html lang="en">  <!--language of the page is english-->
+<head>
+    <!-- meta is used for the telling/deffining about the page-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--Tittle of the page-->
+</head>
+
+<!-- The content inside the body is diplayed on the screen -->
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <br>  <!--For breaking the line-->
+
+    <!-- p for the paragraph -->
+    <!-- LoremX can be used to generate the X number of random words (X -> digit)-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem a quas eligendi quam quidem illum labore vero,
+        itaque hic velit.</p>
+    <br>
+
+    <!--anchor "a" tag is used to add the link in the page -->
+    <a href="https://google.com"> google </a><br>   <!-- absolute url-->
+    <a href="/chapter2/relativePage.html">Go to relative</a>    <!--relative url-->
+    <br>
+    
+    IMAGE <br>
+    <img src="https://cdn.carbuzz.com/gallery-images/2022-ford-mustang-shelby-gt500-carbuzz-532275.jpg" alt="Dream car" width="200">   <!--absolute url image -->
+    <br>
+    <img src= "/chapter2/image.jpg" alt = "nice image" width="200">   <!-- relative image -->
+    <br>
+
+    <hr>   <!--this creates the horizontal line-->
+    <b>Yeh bold hai</b><br>
+    <i>Yeh Itallic hai</i><br>
+    <u>Yeh underlined hai</u><br>
+    <hr>
+    
+    <!--sub for the subrcirpt-->
+    <!--&rarr for the "->" arrow-->
+    <p>C + O<sub>2</sub> &rarr; CO<sub>2</sub></p>
+    
+    <!-- sup for the superscript -->
+    <p>ax<sup>2</sup> + bx + c</p>
+
+    <!--to display the content as it is in the page-->
+    <!-- pre will  not remove the indentation and spacing between text-->
+    <pre>
+        #include <iostream>
+        #include <vector>
+        using namespace std;
+        
+        // finding the minimum no. 
+        int smallest (vector<int> arr, int index){
+            int min = INT_MAX;
+            for (int i=index; i<arr.size(); i++){
+                if (arr.at(i) <= min){
+                    min = arr.at(i);
+                    index = i;
+                }
+            }
+            return index;  // retruning minimum no. index
+        }
+        // printing the array
+        void print(vector<int> arr){
+            for (auto x : arr){
+                cout << x << " ";
+            }
+        }
+        void Algorithm (vector<int> &arr){  // main algortihm 
+            int min;
+            for (int i=0; i<arr.size()-1; i++){   // iterating for n-1 time
+                min = smallest(arr, i);  // finding the min element index
+                swap(arr.at(i), arr.at(min));  // swaping it with current iterator
+            }
+        }
+        int main()
+        {
+            int n; // no. of elements
+            cout << "Enter the elements: ";
+            cin >> n;
+        
+            vector<int> arr;
+            int ele;
+            cout <<  "Enter the elements: " << endl;
+            for (int i=0; i<n ; i++){
+                cin >> ele;
+                arr.push_back(ele);
+            }
+            Algorithm(arr);
+            cout << "After Sorting: ";
+            print(arr);
+            return 0;
+        }     
+    </pre>
+</body>
+</html>

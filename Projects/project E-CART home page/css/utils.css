@@ -1,0 +1,14 @@
+.flex-all-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-1{
+    margin: 0 0 -11px 51px;
+}
+
+.items img:hover{
+    width: 160px;
+    height: 185px;
+}

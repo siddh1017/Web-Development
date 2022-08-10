@@ -1,0 +1,18 @@
+@media screen and (max-width: 870px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: center;
+        margin: 5px 0;
+    }
+    
+    nav .search{
+        margin: 10px 0 5px 0;
+    }
+}

@@ -1,0 +1,61 @@
+<!-- display and fonts-->
+<!--ABOUT Display and Text in this file-->
+<!--use the mdn refernce to explore more-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color:cadetblue;
+            display: inline;
+            /*as the inline feature dosent allow to control the features like height/weight, TOP paddling/margin*/
+            width: 300px;
+            height:300px;
+            margin: 20px;
+        }
+        .box2{
+            display: inline;
+            background-color: rgb(225, 173, 106); 
+            /* display: none; */ /*this will remove the particular tag from page */
+            /*visibility: hidden;*/  /*this will hide the particular tag .. leaving its space as it is in page */
+        }
+        .box3{
+            background-color: cornflowerblue;
+            display: inline-block;
+            text-align: center;  /*writes the content in the middle*/
+            /*inline-block allows to contorl all attributes*/
+            height: 100px;
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            text-decoration:line-through;  /*any kind of decoration can be used (usually not advised)*/
+            text-transform: capitalize;  /*capitalize the first letter of each word (usefull)*/
+            line-height: 1.3;  /*spacing height between 2 lines (usefull)*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class = "box1">
+       hello i am box 1
+    </div>
+    <div class="box2">
+        hello i am box 2
+    </div>
+    <div class = "box3">
+        hello i am box 3
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, esse.
+    </div>
+</body>
+</html>

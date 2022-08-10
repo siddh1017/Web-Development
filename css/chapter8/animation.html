@@ -1,0 +1,67 @@
+<!--About Animations-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            /* animation-name: firstAnimation; */  /*to start animation with no condition*/
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 1s; */
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            /*animation: type2Animation 1s ease-in-out 3;*/  /*shortened property*/
+        }
+        img:hover{
+            /* animation-name: firstAnimation; */  /*to start animations on hovering on it*/
+            animation: rotate 1s infinite;
+        }
+
+
+        @keyframes firstAnimation{
+            from{
+                width: auto;
+                height: auto;
+            }
+            to {
+                width: 40vw;
+                height: auto;
+            }
+        }
+
+        @keyframes type2Animation {
+            0%{
+                width: auto;
+                height: auto;
+            }
+            45%{
+                width: 30vw;
+                height: auto;
+            }
+            100%{
+                width: 40vw;
+                height: auto;
+            }
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="image2.jpg" alt="super mario">
+</body>
+</html>

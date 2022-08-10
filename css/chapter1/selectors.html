@@ -1,0 +1,47 @@
+<!-- to select the tag for style by their name itself-->
+<!-- to select particular class ".className" is used-->
+<!-- to select particular id "#idName" is used-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h1{
+            color: red;
+        }
+        body {
+            background-color:rgb(140, 168, 153);
+            color: rgb(26, 88, 88);
+        }
+        div#second {  /*It will select the div with id = "second"*/
+            background-color: burlywood;
+            color: brown;
+        }
+        p.blue, span {   /*It will select the p of class = "blue"*/
+            background-color: aquamarine;
+        }
+        /* NOTE
+        1. we can also select only p and div or any other tag.
+        2. we can select multiple tags at the same time using coma's
+        */
+
+    </style>
+</head>
+<body>
+    <h1>I am h1</h1>
+    <div id = "first" class =  "blue">
+        <p class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus beatae soluta quo ducimus esse fugit temporibus. Harum, nobis reiciendis veritatis ipsum cum ea perspiciatis distinctio, blanditiis est voluptatem molestiae corrupti.</p>
+        <div id = "second">
+            <h2>h2 from inner div</h2>
+            <p class="blue red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos optio vitae in!</p>
+        </div>
+        <h1>I am h1 again</h1>
+        <p id = "second" class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum repellat nesciunt hic dolor. Aliquid, iste.</p>
+    </div>
+    <span>I am span</span>
+</body>
+</html>

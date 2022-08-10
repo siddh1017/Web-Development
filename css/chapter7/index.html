@@ -1,0 +1,51 @@
+<!--  Grid and Media-Querys-->
+<!--About Grid-->
+<!--DO NOT set the particular box/element size .. we can set the size according to gird container-->
+<!--justify-content  -> allows the movment of content in horizontal direction-->
+<!--align-content - > mostly allows the movement content in vertical direction-->
+<!-- use the grid-column and grid-row properly (will make nice layouts)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            background-color:cadetblue;
+            height: 90vh;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            grid-template-columns: auto auto auto auto ;
+            grid-template-rows: 10vh 10vh 10vh;
+            /* justify-content: center;
+            align-content: center; */
+            color: black;
+        }
+        .box{
+            background-color: cornflowerblue;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="grid-column: 1/3;"><p>box1</p></div>
+        <div class="box"><p>box2</p></div>
+        <div class="box"><p>box3</p></div>
+        <div class="box" style="grid-column: 1/ span 3; grid-row: 2/4;"><p>box4</p></div>
+        <div class="box"><p>box5</p></div>
+        <div class="box"><p>box6</p></div>
+        <div class="box" style="grid-row: 3/ span 3;"><p>box7</p></div>
+        <div class="box"><p>box8</p></div>
+        <div class="box"><p>box9</p></div>
+    </div>
+</body>
+</html>

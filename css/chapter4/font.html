@@ -1,0 +1,36 @@
+<!--About fonts-->
+<!--Deafault fonts and size of fonts depends on the browser-->
+<!--Explore more by MDN refrence (also see font-variant property)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            color: rgb(15, 154, 159);
+        }    
+        h1{
+            font-size: 20px; /*size of h1 will be changed*/
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+            /*out of 3 family mentioned one will be selected (line wise), if any of the family cannot be rendered then browser default will be selected*/
+        }
+        p{
+            line-height: 1.6;  /*space between 2 lines*/
+            font-weight: 100;  /*weight of the text*/
+            font-style: italic;  
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>About fonts</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam magnam adipisci facere vero itaque, reiciendis aut iure velit alias explicabo! Rem a adipisci voluptate eveniet repellat, dicta optio voluptatibus, aut ab modi tempore nesciunt!</p>    
+    </div>
+</body>
+</html>

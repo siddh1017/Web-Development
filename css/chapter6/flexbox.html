@@ -1,0 +1,77 @@
+<!--FLEX-BOX-->
+<!--flex-direction and justify-content works overlappingly (carefull)-->
+<!--flex-wrap wont work if the size of the content is relative as that would adjust itself (vw, vh , etc.,)-->
+<!--explore each property on MDN refernce-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;  /*by default it aligns the items in row wise*/
+            flex-direction:row;  /*aligns the box in colomn wise*/
+            background-color: darkcyan;
+            color: black;
+            height: 100vh;
+            width: 100vw;
+            flex-wrap:wrap;
+            justify-content:flex-start;   /*MOST USED  --> align the content on mentioned target*/
+            align-items: center;
+            /* align-content: center; */  /*dosent leave the space between the contents (increase height:150vh and see effect of this)*/
+        }
+        .box1{
+            background-color: antiquewhite;
+            color: black;
+            /*width: 25vw;
+            height: 60vh;*/
+            width: 250px;
+            height: 250px;
+            order: 3;  /*order decides the plcae of particular box/element in the container*/
+        }
+        .box2{
+            background-color: cadetblue;
+            color: black;
+            /*width: 25vw;
+            height: 60vh;*/
+            width: 250px;
+            height: 250px;
+            flex-shrink: 2;  /*shrinks the size of by some factor*/
+        }
+        .box3{
+            background-color: cornflowerblue;
+            color: black;
+            /*width: 25vw;
+            height: 60vh;*/
+            width: 250px;
+            height: 250px;
+            flex-grow: 2;   /**enlarges the size by some factor3/
+            /*align-self: flex-end;*/ /*allows to override the alignment maintained*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h4>i am box1</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quaerat, est in mollitia, repellat ducimus deleniti laudantium aspernatur distinctio recusandae sapiente officia dolorum!</p>
+        </div>
+        <div class="box2">
+            <h4>i am box2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odit consequuntur veniam sapiente labore. Itaque ratione aliquam ullam natus excepturi voluptatibus harum. Ad?</p>
+        </div>
+        <div class="box3">
+            <h4>i am box3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum distinctio officia at quaerat error totam suscipit ea eum asperiores, rem tempora reprehenderit dolorem hic cum?</p>
+        </div>
+    </div>
+</body>
+</html>

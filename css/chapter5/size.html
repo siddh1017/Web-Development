@@ -1,0 +1,54 @@
+<!--Size, Position And Lists-->
+<!--About Size/relative size of everything-->
+<!--explore min/max-height/weight on the MDN reference-->
+<!--explore more MDN refernece-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 10px;
+        }
+        .container{
+            font-size: 15px;  
+            background-color: blanchedalmond;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        .box1{
+            /* font-size: 3em;*/  /*this sets the size 3 times the size of the parent (=45px)*/
+            font-size: 3rem;    /*this sets the size 3*size of the html content*/
+            width: 50vw;        /*sets the box size to 50% of the available width on screen*/
+            height: 90vh;       /*sets the box size to 50% of the available width on screen-*/
+            background-color: cornflowerblue;
+            display: inline-block;
+        }
+        .box2{
+            font-size: 2em;
+            background-color: burlywood;
+            width: 50vw;
+            height: 90vh;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>Hello Size</h1>
+        <div class = "box1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ratione fugiat dolorum.</p>
+        </div><div class = "box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo eius sed.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pading1 {
+    padding: 10px; 
+    margin: 5px;
+}
+
+.pading {
+    padding: 10px; 
+    margin: 10px;
+    background-color: rgb(78, 38, 226);
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: whitesmoke;
+}
+
+.container input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(32, 32, 32);
+}
+
+.container1 input::placeholder{
+    color: rgb(67, 67, 67);;
+    opacity: 1;
+    font-weight: bolder;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+.Register {
+    width: 130px;
+    border : 0px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.Register a{
+    text-decoration: none;
+    color: black;
+    font-weight : bolder;
+}

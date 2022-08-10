@@ -1,0 +1,60 @@
+<!--type = "text" for the textfield-->
+<!--type = "radio" for radio button-->
+<!--type = "checkbox" for checkbox button-->
+<!--placeholder attribute  -> will create the temporary text in text area-->
+<!--same "name" attribute -> is used to select one of option-->
+<!--id attribute -> of the each tag is unique unlike name attribute-->
+<!--name attribute -> is also used for the identification of tag by the backend techologies-->
+<!--class attribute -> is used for the help in CSS-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="form.php">
+            <p> Enter name:
+                <input type="text" placeholder="Enter your name">
+            </p>
+            <p>Enter the block:
+                <!--label is used to click on radio button by even clicking txt (id of tag is to written in for = " ")-->
+                <label for="blockA">
+                    <input type="radio" value="Block A" name="block" id="blockA"> Block A
+                </label>
+
+                <label for="blockB">
+                    <input type="radio" value="Block B" name="block" id="blockB"> Block B
+                </label>
+                <label for="blockC">
+                    <input type="radio" value="Block C" name="block" id="blockC"> Block C
+                </label>
+            </p>
+            <p>
+                <label for="mess">
+                    <input type="checkbox" name="mess" id="mess">Mess
+                </label>
+            </p>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"
+                placeholder="Enter why u want to join VIT"></textarea>
+            </p>
+            <p>
+                <select name="campus" id="campus">
+                    <option value="selet">campus</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="vellore">Vellore</option>
+                    <option value="amravati">Amravati</option>
+                    <option value="bopal">Bopal</option>
+                </select>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

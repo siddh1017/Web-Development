@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:antiquewhite;
+}
+
+header{
+    padding: 2vh 0;
+    background-color:rgb(116, 16, 16);
+}
+
+nav{
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    margin: 0 10px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100; 
+}
+
+nav ul li a:hover{
+    font-weight: 1000;
+}
+
+nav .search{
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    background-color: black;
+    width: 365px;
+    height: 27px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.search input{
+    width: 365px;
+    height: 27px;
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+    border: 0;
+}
+
+.search button:hover{
+    width: 40px;
+}
+
+.container{
+    min-height: 81vh;
+    margin: 20px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin:  0 0 25px 0;
+}
+
+.image img{
+    height: 45vh;
+    width: 92vw;
+}
+
+.row1{
+    margin: 10px 40px 45px 40px;
+    padding: 5px;
+    overflow: scroll;
+    font-family: 'Koulen', cursive;
+}
+
+.slider{
+    display: inline-flex;
+}
+
+.items{
+    background-color:rgb(255, 153, 116);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 25px 0 0;
+    border: 5px black;
+    border-style:groove;
+    font-family: 'Koulen', cursive;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.item-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 10vh;
+    background-color: cornflowerblue;
+    color: black; 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+}

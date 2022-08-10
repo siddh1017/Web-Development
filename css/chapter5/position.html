@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:chocolate;
+        }
+        header{
+            background-color: black;
+            /* z-index: 2; */
+        }
+        header li{
+            color: aliceblue;
+            display: inline-block;
+            padding: 12px;
+            /* z-index: 2; */
+        }
+        .container{
+            background-color: antiquewhite;
+            width: 60vw;
+            margin: auto;
+            border: 3px solid;
+            border-color: bisque;
+            height: 1000vh;
+        }
+        .box{
+            background-color: cornflowerblue;
+            width: 20vw;
+            height: 12vh;
+            position: relative;  /*making  the position relative we can make move elements*/
+            /*position: absolute; */ /*this will not count the element in container */
+            position: sticky;         /*same as absolute but postition is fixed as mentioned */   
+            /* right: 0;
+            top: 0; */
+            bottom: 0;
+            /* z-index: 1; */
+        }
+        .box2{
+            background-color: cadetblue;
+            width: 20vw;
+            height: 12vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>I am position</p>
+        <div class="box">
+            from box 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam sit exercitationem eos officia minus obcaecati accusamus iusto labore?
+        </div>
+        <div class="box2">
+            from box 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat officiis natus veniam, suscipit in assumenda. Ab et dolores quae officiis.
+        </div>
+    </div>
+    <!-- <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Oranges</li>
+    </ul> -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--ways to add the css-->
+<!--1. create the style element in the html code itself in the HEAD element-->
+<!--2. create the css file and create the link in the HEAD elemnt-->
+<!--3. declare the style tag itself in the particular element itself (NOT ADVISED!!)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--WAY 1:-->
+    <!-- <style>
+        .blue{
+            background-color: aquamarine;
+        }
+        #first{
+            background-color: antiquewhite;
+            color:brown;
+        }
+        .green{
+            background-color: cadetblue;
+            color: burlywood;
+        }
+    </style> -->
+
+    <!-- WAY 2-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--We can include the style sheets in the tag itself-->
+    <div class="red blue" style="background-color:blueviolet; color:antiquewhite;">
+        <h1 class="green">
+            hello CSS
+        </h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic aut nostrum accusantium soluta labore asperiores. Enim totam repellat dolor.
+    </div>
+    <div id="first" class = "blue">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repudiandae totam, fuga corrupti delectus eligendi, voluptatum cupiditate ab quis nesciunt sit consequatur nemo?
+    </div>
+</body>
+</html>

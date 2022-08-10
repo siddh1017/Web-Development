@@ -1,0 +1,66 @@
+<!--Javascript coding is done under script tag-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: blanchedalmond;
+            color: black;
+            border: 2px solid red;
+            padding: 0 3px;
+        }
+
+        .bg-primary {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to javascript</h1>
+    <div  id="para1" class="container">
+        <h4>this is para1</h4>
+        <p>
+            Lorem ipsum  dolor sit amet consectetur adipisicing elit. Ea assumenda cum aperiam.
+        </p>
+    </div>
+    <div id="para2" class="container">
+        <h4>this is para2</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, a officia sequi voluptatem aliquid debitis
+            maxime voluptates. A corporis, enim quidem quaerat officiis soluta.
+        </p>
+    </div>
+
+    <!--script is usually written just before the body ends-->
+    <!--WAY 1: (directly write code in script tag) -->
+    <!--
+    <script>
+        // About Console API 
+        console.log('Hello World!!', 4+1, 2, "hello another")   // -> MOSTLY USED
+        alert('Welcome to javascipt')   // alerts are not used much in current days
+        // document.write('hello java script')  // to write content in page (avoids this)
+        console.warn('this is warning')  // in yellow color
+        console.error('error occurred')  // in red color
+        // console.clear()  // clears the console
+        console.assert(4 == 6)  // if assert fails it will show error else nothing
+        console.assert(4 == (6-2))
+    </script>
+    -->
+
+    <!--WAY 2: (embbiding source)-->
+    <script src="script.js"></script>
+</body>
+
+</html>

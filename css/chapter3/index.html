@@ -1,0 +1,56 @@
+<!--margin -> used to space the between outer boxes or page-->
+<!--border -> it is used to create the border of the box or content-->
+<!--padding -> used to set space between the border and content --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOXING</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div.out{
+            background-color: chocolate; 
+            /* margin: 10px; */ /*margin 10px on each side*/
+            /* margin: 20px 10px; */ /* top-bottom  left-right */
+            margin: 20px 10px 15px 25px;  /*top right bottom left(remember sequence by clock)*/
+            border: 3px dashed black;  /*it can be done individually too*/
+            border-radius: 10px;   /* to round the radius*/
+            padding: 5px;   
+            width: 300px;   /*content width size*/
+            height: 300px;  /*content height size*/
+        }
+        div.in{
+            background-color:bisque;
+            border: 1px solid bisque;
+            padding: 2px;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;  /*default content-box*/
+            /* it will fit the content of child div such that border+padding+width  will equal to width of the outer box (NOTE: if margin is set then it will overflow anyway is the condtion is not n=met)*/
+        }
+        div.second{
+            margin: 50px 10px 5px 25px;
+            width: 300px;   
+            height: 300px;  
+        }
+    </style>
+</head>
+<body>
+    <div class = "out">
+        <h1>Hello BOXing</h1>
+        <p>I am from out Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis eveniet numquam mollitia, recusandae fugiat incidunt omnis magni explicabo commodi vitae qui! Cupiditate sint quis similique quibusdam at dolorem omnis dignissimos iste numquam tempora.</p>
+        <div class = "in">
+            I am from in Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, excepturi eum nobis sequi, vitae architecto illum soluta dolorem consequuntur pariatur aspernatur nulla, veniam doloribus. Totam esse fuga tempore ipsa impedit!
+        </div>
+    </div>
+    <div class = "second">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quibusdam nulla qui, minima repellendus cumque dolore facilis perspiciatis! At, minima. Quis ullam obcaecati esse exercitationem maxime iste dignissimos autem ratione!</p>
+    </div>
+</body>
+</html>
