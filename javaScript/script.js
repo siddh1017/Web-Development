@@ -1,12 +1,27 @@
-// About Console API -------->
+// // About Console API -------->
 // console.log('Hello World!!', 4 + 1, 2, "hello another")   // --> MOSTLY USED
 // alert('Welcome to javascipt')   // alerts are not used much in current days
-// // document.write('hello java script')  // to write content in page (avoid this)
+// document.write('hello java script')  // to write content in page (avoid this)
 // console.warn('this is warning')  // in yellow color
 // console.error('error occurred')  // in red color
 // // console.clear()  // clears the console
 // console.assert(4 == 6)  // if assert fails it will show error else nothing
 // console.assert(4 == (6 - 2))
+
+// // All of the above opens the dailog box before loading the entore apfe                                                                                                                                        
+// // Alert in JS
+// alt = alert ("This is maessage")
+// console.log (alt)    // return type os alert is undifined
+// // // Prompt in JS 
+// var nam  = prompt ("Enter Name : ", "Guest")   // takes/returns the deafault values as
+// console.log (nam)
+// let deletePost = confirm ("Do u really want to delete the post?")     // confirm returns the bolean value 
+// if (deletePost) {
+//     console.log ("post deleted")
+// }
+// else {
+//     console.log ("post rescued")
+// }
 
 
 // var type1 = 12    // var -> variable declaration
@@ -109,11 +124,31 @@
 //     console.log('u r kid')
 // }
 
+// const cups = 43
+// switch (cups) {
+//     case 23:
+//         console.log ("value is 43")
+//         break
+//     case 43 :
+//         console.log ("value is 44")
+//         break
+//     case 53:
+//         console.log ("value is 56")
+//         break
+//     default :
+//         console.log ("value not matched")
+//         break
+// }
+
 // LOOPs  ------------>
 // for loop 
 // var arr = [1, 2, 3, 4, 5]
 // for (var i = 0; i < arr.length; i++){
 //     console.log(arr[i])
+// }
+
+// for (element of arr) {
+//     console.log (element)
 // }
 
 // // for-each loop
@@ -123,10 +158,10 @@
 
 // // while loop
 // let j = 0
-// while (j < arr.length){
-//     console.log(arr[j])
+// while (j < 6){
+//     console.log(`${j} is value`)
 //     j++
-// }
+// } 
 
 // // do-while 
 // let k=0
@@ -162,6 +197,11 @@
 // arr.unshift("tejaskumar"); console.log(arr)  // replace the first element
 // console.log(arr.unshift("tejaskumar"))  // returns the length (BE CAREFULL)
 // arr.toString(); console.log(arr)
+// let names = new Array(23);
+//         console.log(names.length);
+//         names = names.sort();
+//         names.push("this is pushed");
+//         console.log(names);
 
 // let arr2 = [1, 333, 5, 23, 7]
 // arr2.sort(); console.log(arr2) 
@@ -174,6 +214,11 @@
 // console.log(str.lastIndexOf("web"))  // dectects for input from end of str
 // console.log(str.slice(3, 9))   // gives the string from index 3 to index 8(n-1) 
 // console.log(str.replace("web", "app")) // replace 1st occurrence only
+// var sub = str.substring (1, 7)    // same as the slice
+// var sub = str.substr (1, 7)     // again same as slicing
+// var spacedStr = '  hey    therer   !!'
+// console.log (spacedStr.trim())      // trims the string
+
 
 // // DATE and it's method
 // let today = new Date();
@@ -185,7 +230,7 @@
 // console.log(today.getMinutes());  // minute 
 
 // DOM manipulation  (explore MORE)-------------->
-
+ 
 // let ele = document.getElementById('para1')  // it  gets the elemet by id
 // console.log(ele)
 
@@ -286,16 +331,16 @@
 
 // // use clearInterval(clr)/clearTimeout(clr) to stop setInterval/setTimeout
 
-// // localStorage -------------->
-// console.log(localStorage.clear())  // clears the localStorage
-// console.log(localStorage)  // displays complete localStorage
-// localStorage.setItem('1', 'siddh')  // insert the item in the localStorage
-// localStorage.setItem('2', 'shah')
-// console.log(localStorage)
-// console.log(localStorage.getItem('2'))  // gets the element by id
-// localStorage.removeItem('1')   // to remove item by id
-// console.log(localStorage)  
-// localStorage.clear()
+// localStorage -------------->
+console.log(localStorage.clear())  // clears the localStorage
+console.log(localStorage)  // displays complete localStorage
+localStorage.setItem('1', 'siddh')  // insert the item in the localStorage
+localStorage.setItem('2', 'shah')
+console.log(localStorage)
+console.log(localStorage.getItem('2'))  // gets the element by id
+localStorage.removeItem('1')   // to remove item by id
+console.log(localStorage)  
+localStorage.clear()
 
 
 // // JSON (learn more)---------------------->

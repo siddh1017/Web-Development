@@ -1,0 +1,120 @@
+body
+{
+    font-size: larger;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.content li {  
+    list-style-type: none;  
+    font-weight: bold;  
+    font-size: 20px;  
+    list-style: none;
+    display: flex;
+   
+} 
+
+.content
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+
+}
+.nav
+{
+    display: flex;
+}
+button
+{
+    width: 75px;
+    height: 40px;
+    margin-top: 20px;
+    background-color:blue;
+    color: white;
+}
+button:hover
+{
+    background-color: violet;
+}
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover
+{
+    color: chartreuse;
+}
+nav h1 span
+{
+    text-shadow: 2px 2px #FF0000;
+}
+.first
+{
+    color: aquamarine;
+    text-shadow: 2px 2px #FF0000;
+}
+.second
+{
+    color: forestgreen;
+    text-shadow: 2px 2px #FF0000;
+    
+}
+.third
+{
+    color:gold;
+    text-shadow: 2px 2px #FF0000;
+}
+.image
+{
+    width: 40%;
+    height: 10%;
+}
+img
+{
+    margin-left: 15%;
+}
+.desc
+{
+    width: 50%;
+}
+.container
+{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.icons
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.text
+{
+    margin-left: 15%;
+    display: flex;
+}
+.instructions
+{
+    width: 50%;
+    
+}
+.ingredients
+{
+    margin: 5%;
+    background-color: antiquewhite;
+    height: max-content;
+}
+.ingredients p
+{
+    margin-left: 3%;
+}
+.title
+{
+    color: #FF0000;
+}

@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(226, 204, 164);
+    font-family: Garamond,"Lucida Console", "Courier New", monospace;
+
+}
+.content li {  
+    list-style-type: none;  
+    font-weight: bold;  
+    font-size: 20px;  
+    list-style: none;
+    display: flex;
+   
+} 
+
+.content
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: center; */
+
+}
+.nav
+{
+    display: flex;
+}
+button
+{
+    width: 75px;
+    height: 40px;
+    margin-top: 20px;
+    background-color:blue;
+    color: white;
+    border-radius: 30px;
+}
+button:hover
+{
+    background-color: violet;
+}
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover
+{
+    color: chartreuse;
+}
+nav h1 span
+{
+    text-shadow: 2px 2px #FF0000;
+}
+.first
+{
+    color: rgb(97, 11, 11);
+    text-shadow: 1px 1px #FF0000;
+}
+.second
+{
+    color: forestgreen;
+    text-shadow: 1px 1px #FF0000;
+    
+}
+
+.body
+{
+    background-image: url("./1.jpg");
+    width: 70%;
+    height: 40%;
+    margin-left: 12%;
+    margin-top: 30px;
+    
+}
+.matter
+{
+    color:wheat;
+    font-weight: 500;
+    font-size: x-large;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center;
+    margin-left: 40%;
+    margin-top: 10%; */
+    text-align: center;
+    z-index: 1.5;
+    
+}
+.prop
+{
+    width: 70%;
+    height: 40%;
+    margin-left: 12%;
+    margin-top: 30px;
+    display: flex;
+}
+.prop ul
+{
+    padding: 5%;
+    margin: 0%;
+    list-style: none;
+}
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.biryani,.PBM
+{
+    margin-left: 20px;
+    transition: transform .2s;
+}
+.biryani:hover,.dosa:hover,.PBM:hover
+{
+    transform: scale(1.1);
+}
+.dosa
+{
+    margin-left: 150px;
+    transition: transform .2s;
+}
+.menu h3 p
+{
+    margin: 0;
+    padding: 0;
+}

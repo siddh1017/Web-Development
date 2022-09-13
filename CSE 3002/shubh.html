@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .rainbow-text {
+            background-image: linear-gradient(to left, violet, indigo, blue, green, #d2d20f, #eb9c0b, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pets {
+            column-count: 3;
+            column-gap: 10px;
+            /* column-rule-width: 2px; */
+            column-rule-color: black;
+            column-rule-style: outset;
+            column-rule-width: 2px;
+
+        }
+
+        .dog {
+            animation: pet 4s;
+        }
+        .cat {
+            animation: pet 4s;
+        }
+        .parrot {
+            animation: pet 4s;
+        }
+
+        @keyframes pet {
+            0% {
+                font-size: 10px;
+                color: red;
+            }
+
+            25% {
+                font-size: 15px;
+                color: yellow;
+            }
+
+            50% {
+                font-size: 20px;
+                color: blue;
+            }
+
+            100% {
+                font-size: 30px;
+                color: green;
+            }
+        }
+    </style>
+    <title>Pet Animals</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="rainbow-text"> PET ANIMALS</h1>
+    </div>
+    <div class="pets">
+        <div class="dog">
+            <h2>DOG</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae fugit voluptate quibusdam aspernatur
+                vero unde, incidunt iusto itaque, dolorum excepturi? Ex inventore commodi voluptatum voluptatibus
+                voluptates explicabo quos obcaecati nostrum? Maxime, sint quos!</p>
+        </div>
+        <div class="cat">
+            <h2>CAT</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste iure quasi assumenda blanditiis in magnam
+                aliquid! Consequuntur tempore possimus rerum a assumenda laudantium eaque. Reprehenderit odit itaque
+                tempore recusandae unde porro ratione, dolore quas ea nihil dolores incidunt quidem quod natus nostrum
+                temporibus eaque!</p>
+        </div>
+
+        <div class="parrot">
+            <h2>PARROT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam recusandae aliquam unde? Sed
+                totam magnam harum dolor non delectus debitis illum. Iure praesentium voluptatum alias numquam eligendi
+                iusto nam, autem et assumenda consequatur vel, enim quae excepturi aperiam, natus nostrum sed fugiat
+                eaque.</p>
+        </div>
+    </div>
+</body>
+
+</html>
